@@ -16,6 +16,9 @@ $PAGE->set_title(get_string('managepagetitle', 'local_todo'));
 echo $OUTPUT->header();
 echo $OUTPUT->heading(get_string('pluginname', 'local_todo'));
 
+
+$PAGE->requires->js_call_amd('local_todo/confirmdelete', 'init', array());
+
 local_todo_display_student();
 
 echo $OUTPUT->footer();

@@ -79,7 +79,7 @@ function local_todo_edit($mform, int $id = null) {
 function local_todo_delete($id) {
     global $DB;
     try {
-        $DB->delete_records('local_footballscore', array('id' => $id));
+        $DB->delete_records('local_student_details', array('id' => $id));
     } catch (Exception $exception) {
         throw new moodle_exception($exception);
     }

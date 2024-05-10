@@ -10,13 +10,14 @@ try {
 }
 // echo "shamim";
 $id = optional_param('id', 0, PARAM_INT);
-$success = $DB->delete_records('local_student_details', array('id' => $id));
+$PAGE->requires->js_call_amd('local_footballscore/confirmdelete', 'init', array());
+// $success = $DB->delete_records('local_student_details', array('id' => $id));
 
-if ($success) {
-    redirect(new moodle_url('/local/todo/index.php'), get_string('updatethanks', 'local_todo'));
-} else {
-    // Deletion failed, handle the error or display an error message
-    echo "Error: Record deletion failed.";
-}
+// if ($success) {
+//     redirect(new moodle_url('/local/todo/index.php'), get_string('updatethanks', 'local_todo'));
+// } else {
+//     // Deletion failed, handle the error or display an error message
+//     echo "Error: Record deletion failed.";
+// }
 
 
