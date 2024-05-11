@@ -17,3 +17,5 @@ $string['deletestudent'] = "Delete Student";
 $string['deletetitle'] = "Confirm Delete";
 $string['modalmessage'] = "Do you really want to delete this amazing score?";
 $string['delete'] = "Delete";
+$string['textsetting']='Todo List for Students';
+$string['textsettingdesc']='This a todo list for student details';
